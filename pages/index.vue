@@ -1,7 +1,9 @@
 <template>
   <div class="">
     <HeroHeader />
-    <div class="w-1/2 h-36 col"></div>
+    <About />
+    <Menu />
+    <Gallery />
   </div>
 </template>
 
