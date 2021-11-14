@@ -13,6 +13,7 @@
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
+    "@nuxtjs/style-resources": "^1.2.1",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "fibers": "^5.0.0",
     "node-sass": "^6.0.1",
