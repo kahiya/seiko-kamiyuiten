@@ -5,6 +5,6 @@
 <script>
 export default {};
 </script>
-<style scoped lang="scss">
-//scss write here
+<style scoped lang="css">
+//css write here
 </style>
