@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <img src="@/assets/images/hero-imgG.jpg" alt="" class="w-full" />
+    <img src="@/assets/images/hero-img.jpg" alt="" class="w-full" />
     <div class="w-1/2 h-36 col"></div>
   </div>
 </template>
