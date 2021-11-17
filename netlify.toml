@@ -1,6 +1,6 @@
 [build]
   publish = "/"
-  command = "yarn dev"
+  command = "yarn generate"
 
 [build.environment]
   YARN_VERSION = "1.10.1"
