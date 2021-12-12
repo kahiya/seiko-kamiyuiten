@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="index">
     <HeroHeader />
     <About />
     <Menu />
@@ -11,4 +11,4 @@
 <script>
 export default {};
 </script>
-<style scoped lang="css"></style>
+<style scoped lang="scss"></style>

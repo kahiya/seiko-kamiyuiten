@@ -7,4 +7,4 @@
 <script>
 export default {};
 </script>
-<style scoped lang="css"></style>
+<style scoped lang="scss"></style>

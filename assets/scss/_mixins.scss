@@ -1,0 +1,51 @@
+//////////////////////////////// media query
+$breakpoint1: 720px; // iPad mini 縦向きでPCレイアウトが表示されるサイズ
+//$large-width: 1300px;
+
+// XXX: mixin名を各所のコード中で分かりやすくしたい
+
+// $breakpoint1より小さい場合のみ読み込む
+@mixin mq-m {
+  @media (max-width: $breakpoint1 - 1) {
+    @content;
+  }
+}
+
+// $breakpoint1以上の場合のみ読み込む
+@mixin mq-d {
+  @media (min-width: $breakpoint1) {
+    @content;
+  }
+}
+
+/*
+// 大きなサイズで読み込み
+@mixin mq-l {
+    @media (min-width: $large-width) {
+        @content;
+    }
+}
+*/
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+//////////////////////////////// カンプからのサイズ変換
+// 基準画面幅のカンプにおける要素サイズ指定をもとに各要素が画面幅に対して拡大・縮小するパターンが頻出する作りになっているので、
+// 基準サイズをもとに画面幅に応じて自動計算する。
+
+// pcレイアウトは1200px、モバイルレイアウトは320pxを基準画面幅とする
+// 引数のサイズはpxで指定する
+
+@function size-d($px, $base-width: 1200) {
+  @return calc(100vw * (#{$px} / #{$base-width}));
+}
+
+@function size-m($px, $base-width: 320) {
+  @return calc(100vw * (#{$px} / #{$base-width}));
+}

@@ -1,4 +1,11 @@
-body {
-  background-color: pink;
+@charset "UTF-8";
+/*
+// 大きなサイズで読み込み
+@mixin mq-l {
+    @media (min-width: $large-width) {
+        @content;
+    }
 }
+*/
+
 /*# sourceMappingURL=style.css.map */

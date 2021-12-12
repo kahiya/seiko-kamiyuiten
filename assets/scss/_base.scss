@@ -1,0 +1,42 @@
+// レイアウト //////////////////////////////////////////
+.page-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0;
+
+  @include mq-m {
+    margin-top: size-m(110);
+  }
+}
+
+.page-block {
+  width: 100%;
+
+  @include mq-d {
+    max-width: 1000px + (16px * 2);
+    padding: 0 16px;
+  }
+
+  @include mq-m {
+    padding-left: size-m(8);
+    padding-right: size-m(8);
+  }
+}
+
+.header-block {
+  @include mq-d {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  @include mq-m {
+    margin-top: size-m(20);
+    margin-bottom: size-m(30);
+  }
+}
+
+.debug-box {
+}
