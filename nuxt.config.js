@@ -14,6 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
+
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
@@ -46,8 +47,13 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['nuxt-webfontloader'],
 
+  webfontloader: {
+    google: {
+      families: ['Hina+Mincho:400', 'Shippori+Mincho+B1:400'],
+    },
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 };

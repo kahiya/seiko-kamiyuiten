@@ -1,3 +1,19 @@
+:root {
+  --debug_col: rgb(7, 255, 230);
+}
+
+.debug-box {
+  border: 1px solid var(--debug_col);
+}
+
+.shippori {
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+.hina {
+  font-family: 'Hina Mincho', serif;
+}
+
 // レイアウト //////////////////////////////////////////
 .page-root {
   display: flex;
@@ -15,25 +31,25 @@
 .page-block {
   width: 100%;
 
-  // @include mq-d {
-  //   max-width: 1000px + (16px * 2);
-  //   padding: 0 16px;
-  // }
+  @include mq-d {
+    max-width: 1000px + (16px * 2);
+    padding: 0 16px;
+  }
 
-  // @include mq-m {
-  //   padding-left: size-m(8);
-  //   padding-right: size-m(8);
-  // }
+  @include mq-m {
+    padding-left: size-m(8);
+    padding-right: size-m(8);
+  }
 }
 
-// .header-block {
-//   @include mq-d {
-//     margin-top: 40px;
-//     margin-bottom: 50px;
-//   }
+.header-block {
+  @include mq-d {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
 
-//   @include mq-m {
-//     margin-top: size-m(20);
-//     margin-bottom: size-m(30);
-//   }
-// }
+  @include mq-m {
+    margin-top: size-m(20);
+    margin-bottom: size-m(30);
+  }
+}
