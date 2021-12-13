@@ -4,7 +4,6 @@
     <About />
     <Menu />
     <Gallery />
-    <div class="div"></div>
   </div>
 </template>
 
