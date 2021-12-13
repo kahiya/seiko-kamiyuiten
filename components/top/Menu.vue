@@ -1,6 +1,6 @@
 <template>
   <div id="menu" class="page-root">
-    <section class="page-block">
+    <section class="page-block shippori">
       <img
         src="@/assets/images/toppage-title_menu.svg"
         class="seciton-title"
@@ -9,10 +9,14 @@
 
       <a href="/public/menu1.html" class="menu-link right">
         <div class="menu-right">
-          <p class="-header">Menu</p>
-          <p class="">普段の装い</p>
-          <p class="">日常を愉しむ日本髪</p>
-          <p class="">view</p>
+          <p class="menu-header">Menu</p>
+          <p class="menu-title">普段の装い</p>
+          <p class="menu-sub">日常を愉しむ日本髪</p>
+          <p class="menu-btn">
+            <span>view</span>
+
+            <img src="@/assets/images/icon_arrow-bk.svg" alt="" class="arrow" />
+          </p>
         </div>
         <img
           src="@/assets/images/top_menu_1-frame.svg"
@@ -20,13 +24,17 @@
           alt=""
         />
       </a>
-      <a href="/public/menu2.html" class="menu-link">
-        <img src="@/assets/images/top_menu_2.png" class="menu-img" alt="" />
+      <a href="/public/menu2.html" class="menu-link left">
         <div class="menu-left">
-          <p class="">Menu</p>
-          <p class="">普段の装い</p>
-          <p class="">日常を愉しむ日本髪</p>
-          <p class="">view</p>
+          <p class="menu-header">Menu</p>
+          <p class="menu-title">御婚礼の装い</p>
+          <p class="menu-sub">新しい門出の日本髪</p>
+          <p class="menu-btn"></p>
+          <p class="menu-btn">
+            <span>view</span>
+
+            <img src="@/assets/images/icon_arrow-wh.svg" alt="" class="arrow" />
+          </p>
         </div>
         <img
           src="@/assets/images/top_menu_1-frame.svg"
@@ -68,9 +76,23 @@ export default {};
   background-image: url(@/assets/images/top_menu_1.jpg);
 }
 
+.menu-link.left {
+  width: 100%;
+  height: 600px;
+  display: block;
+  margin-top: 20px;
+  background-image: url(@/assets/images/top_menu_2.png);
+}
+
 %menu {
   position: absolute;
+  padding: 40px;
+  text-align: center;
   z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-right {
@@ -80,13 +102,53 @@ export default {};
   bottom: 0;
   width: 425px;
   height: 288px;
-  background-color: rgba(255, 255, 255, 0.681);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .toppage_menu1-frame {
-  @extend %menu;
-
+  position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 60;
+}
+
+.menu-left {
+  @extend %menu;
+  left: 0;
+  bottom: 0;
+  width: 425px;
+  height: 288px;
+  background-color: #ae465d;
+  color: #eee0b5;
+}
+
+.toppage_menu2-frame {
+  position: absolute;
+  z-index: 60;
+  left: 0;
+  bottom: 0;
+}
+
+.menu-header {
+  font-size: 24px;
+}
+
+.menu-title {
+  font-size: var(--4xl);
+}
+
+.menu-sub {
+  font-size: var(--xl);
+}
+
+.menu-btn {
+  font-size: var(--xl);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.arrow {
+  margin-left: 5px;
 }
 </style>
