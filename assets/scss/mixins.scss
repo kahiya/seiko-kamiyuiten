@@ -29,7 +29,7 @@ $breakpoint1: 720px; // iPad mini 縦向きでPCレイアウトが表示され�
 
 @mixin clearfix {
   &::after {
-    content: "";
+    content: '';
     display: block;
     clear: both;
   }

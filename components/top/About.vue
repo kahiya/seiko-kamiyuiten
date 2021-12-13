@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <article id="top_about" class="inner zoomOutTrigger">
+  <div id="top_about" class="page-root">
+    <article class="page-block">
       <div class="top_about-img fadeInTriggerNomal"></div>
       <div class="top_about-area fadeInTriggerNomal">
         <h2 class="top_about-header">日本髪へ</h2>
