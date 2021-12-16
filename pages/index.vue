@@ -4,6 +4,7 @@
     <About />
     <Menu />
     <Gallery />
+    <Contact />
   </div>
 </template>
 

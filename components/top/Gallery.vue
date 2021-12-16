@@ -43,36 +43,6 @@
       <div class="btn-block">
         <a href="/gallery.html" class="nomal-btn shippori">view more</a>
       </div>
-
-      <span class="">
-        <img src="@/assets/images/toppage-title_contact.svg" class="" alt="" />
-      </span>
-      <section id="contact" class="">
-        <img
-          src="@/assets/images/top_menu_1.jpg"
-          class="toppage-contact-img"
-          alt=""
-        />
-        <div class="contact-area">
-          <h2 class="toppage-contact-header">ご予約方法</h2>
-          <p>下記にEメールもしくはDMでご連絡ください</p>
-          <!--/contact-area-->
-          <p class="contact-sns">
-            <span>Email :</span>
-            <span>*****@gmail.com</span>
-          </p>
-          <p class="contact-sns">
-            <img src="@/assets/images/icon_insta.svg" class="icon-sns" alt="" />
-            <span> instagram : </span>
-            <span>@shoryu</span>
-          </p>
-          <p class="contact-sns">
-            <img src="@/assets/images/icon_tw.svg" class="icon-sns" alt="" />
-            <span> twitter : </span>
-            <span>@kamiyuimeko</span>
-          </p>
-        </div>
-      </section>
     </article>
   </div>
 </template>

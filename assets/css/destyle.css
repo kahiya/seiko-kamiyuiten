@@ -1,5 +1,5 @@
 /* https://raw.githubusercontent.com/nicolas-cusan/destyle.css/master/destyle.css */
-/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/*! destyle.css v2.0.2 | MIT License | https://github.co m/nicolas-cusan/destyle.css */
 
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -467,7 +467,7 @@ th {
 
 th {
   text-align: left;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 /* Misc */
