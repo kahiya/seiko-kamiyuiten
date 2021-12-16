@@ -54,12 +54,6 @@ export default {};
   margin-top: 100px;
 }
 
-.seciton-title {
-  margin: auto;
-  width: 300px;
-  margin-bottom: 20px;
-}
-
 .menu-link {
   position: relative;
   transition: 0.3s;

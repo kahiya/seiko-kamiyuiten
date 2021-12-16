@@ -1,9 +1,16 @@
 //////////////////////////////// media query
+$small-width: 512px;
 $breakpoint1: 720px; // iPad mini 縦向きでPCレイアウトが表示されるサイズ
-//$large-width: 1300px;
+$large-width: 1300px;
 
 // XXX: mixin名を各所のコード中で分かりやすくしたい
 
+// $small-widthより小さい場合のみ読み込む
+@mixin mq-sm {
+  @media (max-width: $small-width - 1) {
+    @content;
+  }
+}
 // $breakpoint1より小さい場合のみ読み込む
 @mixin mq-m {
   @media (max-width: $breakpoint1 - 1) {
@@ -29,7 +36,7 @@ $breakpoint1: 720px; // iPad mini 縦向きでPCレイアウトが表示され�
 
 @mixin clearfix {
   &::after {
-    content: '';
+    content: "";
     display: block;
     clear: both;
   }

@@ -7,11 +7,16 @@
 }
 
 .shippori {
-  font-family: 'Shippori Mincho B1', serif;
+  font-family: "Shippori Mincho B1", serif;
 }
 
 .hina {
-  font-family: 'Hina Mincho', serif;
+  font-family: "Hina Mincho", serif;
+}
+
+// HTML //////////////////////////////////////////
+html {
+  background-color: $bg-color;
 }
 
 // レイアウト //////////////////////////////////////////
@@ -51,5 +56,32 @@
   @include mq-m {
     margin-top: size-m(20);
     margin-bottom: size-m(30);
+  }
+}
+
+/* タイトル ---------------------------------------------*/
+.seciton-title {
+  margin: auto;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+/* ボタン ---------------------------------------------*/
+.btn-block {
+  display: flex;
+  justify-content: center;
+}
+
+.nomal-btn {
+  color: $btn-brown;
+  border: 1px solid $btn-brown;
+  padding: 18px 36px;
+  transition: 0.3s;
+  display: inline-block;
+  font-size: 18px;
+
+  &:hover {
+    color: $bg-color;
+    background-color: $btn-brown;
   }
 }
