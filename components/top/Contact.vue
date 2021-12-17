@@ -11,7 +11,11 @@
       <div class="contact">
         <span class="contact-header">ご予約方法</span>
         <p class="shippori">下記にEメールもしくはSNSのDMからご連絡ください</p>
-
+        <img
+          src="@/assets/images/flame-top.svg"
+          alt=""
+          class="flame-img my-10"
+        />
         <table class="contact-info">
           <tr>
             <th>Email</th>
@@ -19,13 +23,22 @@
           </tr>
           <tr>
             <th class="instagram info-header">instagram</th>
-            <td>: @shoryu</td>
+            <td>
+              <a href="https://www.instagram.com/kamiyuiumeko/"> : @shoryu</a>
+            </td>
           </tr>
           <tr>
             <th class="twitter info-header">twitter</th>
-            <td>: @kamiyuimeko</td>
+            <td>
+              <a href="https://twitter.com/kamiyuiumeko"> : @kamiyuimeko </a>
+            </td>
           </tr>
         </table>
+        <img
+          src="@/assets/images/flame-bottom.svg"
+          alt=""
+          class="flame-img mt-10"
+        />
       </div>
     </section>
   </div>
@@ -47,16 +60,27 @@ export default {};
 }
 
 .contact-info {
-  font-size: 20px;
-  margin-top: 30px;
+  font-size: 16px;
+  padding: 50px;
 
   tr > th,
   tr > td {
-    padding: 10px 0;
+    padding: 15px 0;
   }
 
   tr > td {
     padding-left: 10px;
+
+    &::after {
+      content: "\f35d";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+
+      font-size: 16px;
+      margin-left: 5px;
+      color: $btn-brown;
+      pointer-events: none;
+    }
   }
 }
 
@@ -65,7 +89,7 @@ export default {};
   align-items: center;
 }
 
-$icon-width: 20px;
+$icon-width: 16px;
 
 .instagram,
 .twitter {
@@ -93,5 +117,9 @@ $icon-width: 20px;
   &::before {
     background-image: url(@/assets/images/icon_tw.svg);
   }
+}
+
+.flame-img {
+  width: 400px;
 }
 </style>
