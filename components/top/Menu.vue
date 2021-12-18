@@ -63,17 +63,24 @@ export default {};
   }
 }
 
-.menu-link.right {
+%menu-img {
   width: 100%;
   height: 600px;
   display: block;
+
+  @include mq-m {
+    height: 300px;
+  }
+}
+
+.menu-link.right {
+  @extend %menu-img;
+
   background-image: url(@/assets/images/top_menu_1.jpg);
 }
 
 .menu-link.left {
-  width: 100%;
-  height: 600px;
-  display: block;
+  @extend %menu-img;
   margin-top: 20px;
   background-image: url(@/assets/images/top_menu_2.png);
 }
