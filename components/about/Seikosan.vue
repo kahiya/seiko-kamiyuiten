@@ -25,17 +25,6 @@
 export default {};
 </script>
 <style scoped lang="scss">
-.page-header {
-  width: 100%;
-  height: 45vh;
-  object-fit: cover;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-  }
-}
-
 .name-block {
   text-align: center;
   padding: 50px 0;
