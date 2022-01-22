@@ -3,8 +3,8 @@
     <div class="page-header">
       <img src="@/assets/images/main01.jpg" class="page-header-img" alt="" />
     </div>
-    <Intro1 />
-    <MenuJigami />
+    <Intro2 />
+    <MenuTakashimada />
   </div>
 </template>
 
