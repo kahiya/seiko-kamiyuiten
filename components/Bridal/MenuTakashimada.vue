@@ -2,11 +2,12 @@
   <div class="page-block shippori">
     <p>Price</p>
 
+    <!-- プラン高島田 ---------------------------------->
     <div class="menu-wrap">
       <div id="takashimada" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">文金高島田</p>
-        <p class="menu-price">４８，０００[税込]</p>
+        <p class="menu-price">４８，０００円[税込]</p>
         <p class="menu-time">髪結所要時間:1.5時間</p>
         <p class="menu-note">
           高島田はかつて上流武家の女性が正式な儀式の場で結い上げる髪型でした。
@@ -14,17 +15,24 @@
         </p>
         <div class="option">
           <p class="menu-option-title">新日本髪</p>
-          <p class="menu-option-price">２８，０００〜</p>
-        </div>
-        <div class="option">
-          <p class="menu-option-title">
-            花嫁用かんざし一式(角隠し/綿帽子)レンタル
-          </p>
-          <p class="menu-option-price">１４,５００円[税込]</p>
+          <p class="menu-option-price">２８，０００円〜承ります</p>
         </div>
       </div>
       <img class="menu-img" src="@/assets/images/main_sp02.jpg" alt="" />
     </div>
+    <!-- プラン花嫁用かんざし一式(角隠し/綿帽子) ---------------------------------->
+    <div class="menu-wrap-sm">
+      <img class="menu-img" src="@/assets/images/main_sp02.jpg" alt="" />
+      <div class="menu-description">
+        <p class="menu-header">plan</p>
+        <p class="menu-title">花嫁用かんざし一式</p>
+        <p class="menu-price">１４，５００[税込]</p>
+        <p class="menu-note">(角隠し/綿帽子)レンタル</p>
+      </div>
+    </div>
+
+    <!-- プラン黒引き振袖 ---------------------------------->
+
     <div class="menu-wrap">
       <img class="menu-img" src="@/assets/images/main_sp02.jpg" alt="" />
       <div id="kitsuke" class="menu-description">
@@ -39,6 +47,8 @@
         </p>
       </div>
     </div>
+    <!-- プラン白無垢 ---------------------------------->
+
     <div class="menu-wrap">
       <img class="menu-img" src="@/assets/images/main_sp02.jpg" alt="" />
       <div id="hankatsura" class="menu-description">
@@ -75,16 +85,27 @@
 export default {};
 </script>
 <style scoped lang="scss">
-.menu-wrap {
+%menu-wrap {
   width: 100%;
   display: flex;
   gap: 5%;
-  height: clamp(400px, 60vw, 600px);
   margin-bottom: 100px;
 
   @include mq-m {
     flex-direction: column;
   }
+}
+
+.menu-wrap {
+  @extend %menu-wrap;
+
+  height: clamp(400px, 60vw, 600px);
+}
+
+.menu-wrap-sm {
+  @extend %menu-wrap;
+
+  height: clamp(240px, 40vw, 400px);
 }
 
 .menu-description {
@@ -148,5 +169,20 @@ export default {};
 .menu-img {
   width: 50%;
   object-fit: cover;
+}
+
+.option {
+  margin-top: 28px;
+}
+
+.menu-option-title {
+  font-size: 22px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.menu-option-price {
+  font-size: clamp(16px, 3vw, 18px);
 }
 </style>

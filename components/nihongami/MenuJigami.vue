@@ -41,74 +41,111 @@ export default {};
   width: 100%;
   display: flex;
   gap: 5%;
-  height: clamp(400px, 60vw, 600px);
-  margin-bottom: 100px;
+  position: static;
+
+  @include mq-d {
+    height: clamp(400px, 60vw, 600px);
+    margin-bottom: 100px;
+  }
 
   @include mq-m {
     flex-direction: column;
+    margin-bottom: 10vw;
   }
 }
 
 .menu-description {
-  width: 45%;
   background-color: #fff;
   text-align: center;
-  padding: 50px;
+
+  @include mq-d {
+    width: 45%;
+    padding: 50px;
+  }
 
   @include mq-m {
     width: 100%;
+    order: 2;
+    padding: 10vw;
   }
 }
 
 .menu-header {
-  font-size: 24px;
-  margin-bottom: 20px;
+  @include mq-d {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 
   @include mq-m {
     font-size: size-m(16);
+    margin-bottom: 5vw;
   }
 }
 
 .menu-title {
-  font-size: 36px;
-  padding-bottom: 20px;
   border-bottom: 1px solid #000;
-  margin-bottom: 20px;
+
+  @include mq-d {
+    font-size: 36px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
 
   @include mq-m {
-    font-size: size-m(24);
+    font-size: size-m(22);
+    padding-bottom: 5vw;
+    margin-bottom: 5vw;
   }
 }
 
 .menu-price {
-  font-size: clamp(16px, 3vw, 24px);
+  @include mq-d {
+    font-size: clamp(16px, 3vw, 24px);
+  }
 
   @include mq-m {
-    font-size: size-m(20);
+    font-size: size-m(18);
   }
 }
 
 .menu-time {
-  font-size: 18px;
-  margin-top: 20px;
+  @include mq-d {
+    font-size: 18px;
+    margin-top: 20px;
+  }
 
   @include mq-m {
-    font-size: size-m(16);
+    font-size: size-m(14);
+    margin-top: 4vw;
   }
 }
 
 .menu-note {
-  font-size: 16px;
-  line-height: 1.8rem;
-  margin-top: 30px;
+  @include mq-d {
+    font-size: 16px;
+    line-height: 1.8rem;
+    margin-top: 30px;
+  }
 
   @include mq-m {
-    font-size: size-m(20);
+    font-size: size-m(13);
+    margin-top: 5vw;
+    line-height: 1.5;
+    text-align: left;
   }
 }
 
 .menu-img {
-  width: 50%;
   object-fit: cover;
+
+  @include mq-d {
+    width: 50%;
+  }
+
+  @include mq-m {
+    order: 1;
+    width: 100%;
+    height: 70vh;
+  }
 }
 </style>
