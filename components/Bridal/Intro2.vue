@@ -3,7 +3,7 @@
     <!-- intro1 ------------------------------------------->
 
     <div id="intro-box1" class="intro-box">
-      <div id="text-box1">今もむかしも変わらぬ想いを</div>
+      <div id="text-box1">人生において大事な節目の一瞬。</div>
       <img
         id="intro-img1"
         src="@/assets/images/02.jpg"
@@ -13,7 +13,9 @@
     </div>
     <!-- intro2 ------------------------------------------->
     <div id="intro-box2" class="intro-box">
-      <div id="text-box2">今もむかしも変わらぬ想いを</div>
+      <div id="text-box2">
+        両家を結び付け、親交のある人や地域社会との繋がりをより強くし、新郎新婦が新しい家族となってこれからの未来を作っていく大切な人生儀礼の場。
+      </div>
       <img
         id="intro-img2"
         src="@/assets/images/02.jpg"
@@ -24,7 +26,9 @@
     <!-- intro3 ------------------------------------------->
 
     <div id="intro-box3" class="intro-box">
-      <div id="text-box3">今もむかしも変わらぬ想いを</div>
+      <div id="text-box3">
+        「装い」とは「よそほひ」。支度を取りそろえ、綺麗に整えることを言います。新しい門出に際し、自身の身を整えることはケジメをつけ、周りの人へご挨拶する為にもとても大事なこと。
+      </div>
       <img
         id="intro-img3"
         src="@/assets/images/02.jpg"
@@ -34,7 +38,9 @@
     </div>
     <!-- intro4 ------------------------------------------->
     <div id="intro-box4" class="intro-box">
-      <div id="text-box4">今もむかしも変わらぬ想いを</div>
+      <div id="text-box4">
+        連綿と続く日本の和の文化。 家族に感謝を捧げるこころ。
+      </div>
       <img
         id="intro-img4"
         src="@/assets/images/02.jpg"
@@ -49,6 +55,34 @@
 export default {};
 </script>
 <style scoped lang="scss">
+%text-box {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  @include mq-d {
+    padding: 4vw;
+    width: clamp(320px, 35vw, 400px);
+    height: clamp(200px, 30vw, 330px);
+    top: 20%;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  @include mq-m {
+    position: absolute;
+    bottom: 0;
+    width: 65vw;
+    height: 40vw;
+    padding: 6vw;
+    font-size: clamp(12px, 3vw, 14px);
+    line-height: 1.7;
+  }
+}
+
 .intro-box {
   position: relative;
   margin-bottom: 100px;
@@ -87,26 +121,9 @@ export default {};
 }
 
 #text-box1 {
-  position: absolute;
+  @extend %text-box;
+
   left: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  width: clamp(320px, 35vw, 400px);
-  height: clamp(200px, 30vw, 330px);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @include mq-d {
-    top: 20%;
-  }
-
-  @include mq-m {
-    position: absolute;
-    bottom: 0;
-    width: 65vw;
-    height: 40vw;
-  }
 }
 
 /* intro2 --------------------------------------------*/
@@ -130,26 +147,8 @@ export default {};
 }
 
 #text-box2 {
-  position: absolute;
+  @extend %text-box;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  width: clamp(320px, 35vw, 400px);
-  height: clamp(200px, 30vw, 330px);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @include mq-d {
-    top: 20%;
-  }
-
-  @include mq-m {
-    position: absolute;
-    bottom: 0;
-    width: 65vw;
-    height: 40vw;
-  }
 }
 
 /* intro3 --------------------------------------------*/
@@ -180,26 +179,9 @@ export default {};
 }
 
 #text-box3 {
-  position: absolute;
+  @extend %text-box;
+
   left: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  width: clamp(320px, 35vw, 400px);
-  height: clamp(200px, 30vw, 330px);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @include mq-d {
-    top: 20%;
-  }
-
-  @include mq-m {
-    position: absolute;
-    bottom: 0;
-    width: 65vw;
-    height: 40vw;
-  }
 }
 
 /* intro4 --------------------------------------------*/
@@ -223,25 +205,8 @@ export default {};
 }
 
 #text-box4 {
-  position: absolute;
+  @extend %text-box;
+
   right: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  width: clamp(320px, 35vw, 400px);
-  height: clamp(200px, 30vw, 330px);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @include mq-d {
-    top: 20%;
-  }
-
-  @include mq-m {
-    position: absolute;
-    bottom: 0;
-    width: 65vw;
-    height: 40vw;
-  }
 }
 </style>
