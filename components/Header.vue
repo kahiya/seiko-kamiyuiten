@@ -1,7 +1,9 @@
 <template>
   <div class="g-nav">
     <GrobalMenu @close-modal="isMenuVisible = false" v-show="isMenuVisible" />
-    <img src="" class="logo" alt="" />
+    <Nuxt-link to="/">
+      <img src="@/assets/images/logo-kari.svg" class="logo" alt="" />
+    </Nuxt-link>
     <div class="nav">
       <button
         class="menu"
@@ -44,7 +46,7 @@ export default {
 .g-nav {
   width: 100%;
   height: 70px;
-  background-color: rgba(255, 255, 255, 0.653);
+  //background-color: rgba(255, 255, 255, 0.653);
   color: #fff;
   position: fixed;
   top: 0;
@@ -57,7 +59,6 @@ export default {
 .logo {
   width: 60px;
   height: 60px;
-  background-color: #000;
   padding-left: 20px;
 }
 
