@@ -14,6 +14,6 @@ export default {};
 </script>
 <style scoped lang="scss">
 .braidal-header {
-  background-image: url(@/assets/images/main02.jpg);
+  background-image: url(@/assets/images/bridal-img3.jpg);
 }
 </style>

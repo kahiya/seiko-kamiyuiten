@@ -18,7 +18,7 @@
           <p class="menu-option-price">２８，０００円〜承ります</p>
         </div>
       </div>
-      <img class="menu-img" src="@/assets/images/main_sp02.jpg" alt="" />
+      <img class="menu-img" src="@/assets/images/torayome-8410.jpg" alt="" />
     </div>
     <!-- プラン花嫁用かんざし一式(角隠し/綿帽子) ---------------------------------->
     <div class="menu-wrap-sm">
@@ -34,7 +34,7 @@
     <!-- プラン黒引き振袖 ---------------------------------->
 
     <div class="menu-wrap">
-      <img class="menu-img" src="@/assets/images/main_sp02.jpg" alt="" />
+      <img class="menu-img" src="@/assets/images/torayome-8252.jpg" alt="" />
       <div id="kitsuke" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">黒引き振袖</p>

@@ -6,7 +6,7 @@
       <div id="text-box1">人生において大事な節目の一瞬。</div>
       <img
         id="intro-img1"
-        src="@/assets/images/02.jpg"
+        src="@/assets/images/torayome-8440.jpg"
         class="section-img"
         alt=""
       />
@@ -18,7 +18,7 @@
       </div>
       <img
         id="intro-img2"
-        src="@/assets/images/02.jpg"
+        src="@/assets/images/top_menu_2.png"
         class="section-img"
         alt=""
       />
@@ -31,7 +31,7 @@
       </div>
       <img
         id="intro-img3"
-        src="@/assets/images/02.jpg"
+        src="@/assets/images/bridal-img1.jpg"
         class="section-img"
         alt=""
       />
