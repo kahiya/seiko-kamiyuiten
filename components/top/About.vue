@@ -20,8 +20,8 @@
           >
         </div>
       </div>
-      <a href="/gallery.html" class="mobile-btn nomal-btn hina mobile"
-        ><span>結髪師のご紹介</span></a
+      <Nuxt-link to="/about" class="mobile-btn nomal-btn hina mobile"
+        ><span>結髪師のご紹介</span></Nuxt-link
       >
     </article>
   </div>
