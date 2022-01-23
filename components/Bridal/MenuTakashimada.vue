@@ -15,7 +15,7 @@
         </p>
         <div class="option">
           <p class="menu-option-title">新日本髪</p>
-          <p class="menu-option-price">２８，０００円〜承ります</p>
+          <p class="menu-option-price">２８，０００円〜</p>
         </div>
       </div>
       <img class="menu-img" src="@/assets/images/torayome-8410.jpg" alt="" />
