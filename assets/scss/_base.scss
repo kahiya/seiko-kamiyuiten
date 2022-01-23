@@ -107,10 +107,18 @@ html {
 }
 
 /* タイトル ---------------------------------------------*/
-.seciton-title {
+.section-title {
   margin: auto;
-  width: 300px;
-  margin-bottom: 20px;
+
+  @include mq-d {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  @include mq-m {
+    width: 50vw;
+    margin-bottom: 10vw;
+  }
 }
 
 /* ボタン ---------------------------------------------*/

@@ -4,13 +4,15 @@
       <span class="">
         <img
           src="@/assets/images/toppage-title_contact.svg"
-          class="seciton-title"
+          class="section-title"
           alt=""
         />
       </span>
       <div class="contact">
         <span class="contact-header">ご予約方法</span>
-        <p class="shippori">下記にEメールもしくはSNSのDMからご連絡ください</p>
+        <p class="shippori contact-note">
+          下記にEメールもしくはSNSのDMからご連絡ください
+        </p>
         <img
           src="@/assets/images/flame-top.svg"
           alt=""
@@ -55,31 +57,70 @@ export default {};
 }
 
 .contact-header {
-  font-size: 24px;
-  margin-bottom: 20px;
+  @include mq-d {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  @include mq-m {
+    font-size: clamp(18px, 5vw, 20px);
+    margin-bottom: 4vw;
+  }
+}
+
+.contact-note {
+  @include mq-m {
+    font-size: clamp(13px, 3vw, 14px);
+  }
 }
 
 .contact-info {
-  font-size: 16px;
-  padding: 50px;
+  @include mq-d {
+    font-size: 16px;
+    padding: 50px;
 
-  tr > th,
-  tr > td {
-    padding: 15px 0;
+    tr > th,
+    tr > td {
+      padding: 15px 0;
+    }
+
+    tr > td {
+      padding-left: 10px;
+
+      &::after {
+        content: "\f35d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+
+        font-size: 16px;
+        margin-left: 5px;
+        color: $btn-brown;
+        pointer-events: none;
+      }
+    }
   }
 
-  tr > td {
-    padding-left: 10px;
+  @include mq-m {
+    font-size: clamp(12px, 3vw, 14px);
 
-    &::after {
-      content: "\f35d";
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
+    tr > th,
+    tr > td {
+      padding: 10px 0;
+    }
 
-      font-size: 16px;
-      margin-left: 5px;
-      color: $btn-brown;
-      pointer-events: none;
+    tr > td {
+      padding-left: 10px;
+
+      &::after {
+        content: "\f35d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+
+        font-size: clamp(12px, 3vw, 14px);
+        margin-left: 5px;
+        color: $btn-brown;
+        pointer-events: none;
+      }
     }
   }
 }
@@ -120,6 +161,12 @@ $icon-width: 16px;
 }
 
 .flame-img {
-  width: 400px;
+  @include mq-d {
+    width: 400px;
+  }
+
+  @include mq-m {
+    width: 80vw;
+  }
 }
 </style>

@@ -78,9 +78,17 @@ export default {};
 }
 
 .about-note {
-  font-size: 18px;
-  line-height: 1.8;
-  padding-top: 10px;
+  @include mq-d {
+    font-size: 18px;
+    line-height: 1.8;
+    padding-top: 10px;
+  }
+
+  @include mq-m {
+    font-size: clamp(14px, 3.5vw, 16px);
+    line-height: 1.7;
+    padding-top: 3vw;
+  }
 }
 
 .mobile-btn {

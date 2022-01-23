@@ -4,7 +4,7 @@
       <span class="">
         <img
           src="@/assets/images/toppage-title_gallery.svg"
-          class="seciton-title"
+          class="section-title"
           alt=""
         />
       </span>

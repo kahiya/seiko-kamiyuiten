@@ -78,12 +78,7 @@
                 <span class="slide-in leftAnime toppage-title-block">
                   <img
                     src="@/assets/images/toppage-title_menu.svg"
-                    class="
-                      toppage-title
-                      slide-in_inner
-                      leftAnimeInner
-                      fadeInTriggerNomal
-                    "
+                    class="toppage-title slide-in_inner leftAnimeInner fadeInTriggerNomal"
                     alt=""
                   />
                 </span>
@@ -138,12 +133,7 @@
                 <span class="slide-in leftAnime toppage-title-block">
                   <img
                     src="@/assets/images/toppage-title_gallery.svg"
-                    class="
-                      toppage-title
-                      slide-in_inner
-                      leftAnimeInner
-                      fadeInTriggerNomal
-                    "
+                    class="toppage-title slide-in_inner leftAnimeInner fadeInTriggerNomal"
                     alt=""
                   />
                 </span>
@@ -209,12 +199,7 @@
                 <span class="slide-in leftAnime toppage-title-block">
                   <img
                     src="@/assets/images/toppage-title_contact.svg"
-                    class="
-                      toppage-title
-                      slide-in_inner
-                      leftAnimeInner
-                      fadeInTriggerNomal
-                    "
+                    class="toppage-title slide-in_inner leftAnimeInner fadeInTriggerNomal"
                     alt=""
                   />
                 </span>
@@ -226,7 +211,9 @@
                   />
                   <div class="contact-area fadeInTriggerNomal">
                     <h2 class="toppage-contact-header">ご予約方法</h2>
-                    <p>下記にEメールもしくはDMでご連絡ください</p>
+                    <p class="contact-note">
+                      下記にEメールもしくはDMでご連絡ください
+                    </p>
                     <!--/contact-area-->
                     <p class="contact-sns">
                       <span>Email :</span>

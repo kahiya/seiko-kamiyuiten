@@ -3,7 +3,7 @@
     <section class="page-block shippori">
       <img
         src="@/assets/images/toppage-title_menu.svg"
-        class="seciton-title"
+        class="section-title"
         alt=""
       />
 
@@ -69,7 +69,7 @@ export default {};
   display: block;
 
   @include mq-m {
-    height: 300px;
+    height: 60vh;
   }
 }
 
@@ -87,13 +87,24 @@ export default {};
 
 %menu {
   position: absolute;
-  padding: 40px;
   text-align: center;
   z-index: 50;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @include mq-d {
+    padding: 40px;
+    width: 425px;
+    height: 288px;
+  }
+
+  @include mq-m {
+    width: 67vw;
+    height: 45vw;
+    padding: 7vw;
+  }
 }
 
 .menu-right {
@@ -101,37 +112,48 @@ export default {};
 
   right: 0;
   bottom: 0;
-  width: 425px;
-  height: 288px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.toppage_menu1-frame {
+%menu-frame {
   position: absolute;
-  right: 0;
   bottom: 0;
   z-index: 60;
+
+  @include mq-m {
+    width: 67vw;
+    height: 45vw;
+  }
+}
+
+.toppage_menu1-frame {
+  @extend %menu-frame;
+
+  right: 0;
 }
 
 .menu-left {
   @extend %menu;
   left: 0;
   bottom: 0;
-  width: 425px;
-  height: 288px;
   background-color: #ae465d;
   color: #eee0b5;
 }
 
 .toppage_menu2-frame {
-  position: absolute;
-  z-index: 60;
+  @extend %menu-frame;
   left: 0;
   bottom: 0;
 }
 
 .menu-header {
-  font-size: 24px;
+  @include mq-d {
+    font-size: 24px;
+  }
+
+  @include mq-m {
+    font-size: var(--3xl);
+  }
 }
 
 .menu-title {
