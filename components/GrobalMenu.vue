@@ -4,19 +4,19 @@
       <div class="menu" @click="$emit('close-modal')">
         <ul class="menu-list">
           <li>
-            <NuxtLink to="/service" class="list-item">TOP</NuxtLink>
+            <a href="/service" class="list-item">TOP</a>
           </li>
           <li>
-            <NuxtLink to="/about" class="list-item">ABOUT</NuxtLink>
+            <a href="/about" class="list-item">ABOUT</a>
           </li>
           <li>
-            <NuxtLink to="/nihongami" class="list-item">NIHONGAMI</NuxtLink>
+            <a href="/nihongami" class="list-item">NIHONGAMI</a>
           </li>
           <li>
-            <NuxtLink to="/bridal" class="list-item">BRIDAL</NuxtLink>
+            <a href="/bridal" class="list-item">BRIDAL</a>
           </li>
           <li>
-            <NuxtLink to="/gallery" class="list-item">GALLERY</NuxtLink>
+            <a href="/gallery" class="list-item">GALLERY</a>
           </li>
         </ul>
       </div>
