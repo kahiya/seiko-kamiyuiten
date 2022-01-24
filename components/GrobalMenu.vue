@@ -4,7 +4,7 @@
       <div class="menu" @click="$emit('close-modal')">
         <ul class="menu-list">
           <li>
-            <a href="/service" class="list-item">TOP</a>
+            <a href="/" class="list-item">TOP</a>
           </li>
           <li>
             <a href="/about" class="list-item">ABOUT</a>
@@ -41,12 +41,12 @@ export default {
   width: 100%;
   letter-spacing: 0.1rem;
   font-size: 14px;
-  background-color: rgba(255, 255, 255, 0.653);
+  background-color: rgba(255, 255, 255, 0.8);
   color: #000;
   top: 70px;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+
   justify-content: space-around;
 }
 
@@ -54,5 +54,10 @@ export default {
   font-size: var(--xl);
   width: 100%;
   text-align: center;
+  padding: 5vh;
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.461);
+  }
 }
 </style>

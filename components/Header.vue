@@ -1,28 +1,30 @@
 <template>
-  <div class="g-nav">
-    <GrobalMenu @close-modal="isMenuVisible = false" v-show="isMenuVisible" />
-    <Nuxt-link to="/">
-      <img src="@/assets/images/logo-kari.svg" class="logo" alt="" />
-    </Nuxt-link>
-    <div class="nav">
-      <button
-        class="menu"
-        @click.prevent="isMenuVisible = true"
-        v-show="!isMenuVisible"
-      >
-        <span class="bar_top"></span>
-        <span class="bar_mid"></span>
-        <span class="bar_bottom"></span>
-      </button>
+  <div class="">
+    <div class="g-nav">
+      <GrobalMenu @close-modal="isMenuVisible = false" v-show="isMenuVisible" />
+      <a href="/">
+        <img src="@/assets/images/logo-kari.svg" class="logo" alt="" />
+      </a>
+      <div class="nav">
+        <button
+          class="menu"
+          @click.prevent="isMenuVisible = true"
+          v-show="!isMenuVisible"
+        >
+          <span class="bar_top"></span>
+          <span class="bar_mid"></span>
+          <span class="bar_bottom"></span>
+        </button>
 
-      <button
-        class="menu"
-        @click.prevent="isMenuVisible = false"
-        v-show="isMenuVisible"
-      >
-        <span class="bar_left"></span>
-        <span class="bar_right"></span>
-      </button>
+        <button
+          class="menu"
+          @click.prevent="isMenuVisible = false"
+          v-show="isMenuVisible"
+        >
+          <span class="bar_left"></span>
+          <span class="bar_right"></span>
+        </button>
+      </div>
     </div>
   </div>
 </template>

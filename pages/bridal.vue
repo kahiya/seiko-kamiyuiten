@@ -1,11 +1,15 @@
 <template>
-  <div id="page_nihongami" class="page-root">
-    <div class="page-header braidal-header shippori">
-      <p class="page-title">BRAIDAL</p>
-      <p class="page-subtitle">御婚礼の装い</p>
+  <div class="">
+    <Header />
+    <div id="page_nihongami" class="page-root">
+      <div class="page-header braidal-header shippori">
+        <p class="page-title">BRAIDAL</p>
+        <p class="page-subtitle">御婚礼の装い</p>
+      </div>
+      <Intro2 />
+      <MenuTakashimada />
     </div>
-    <Intro2 />
-    <MenuTakashimada />
+    <Footer />
   </div>
 </template>
 

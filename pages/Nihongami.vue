@@ -1,11 +1,16 @@
 <template>
-  <div id="page_nihongami" class="page-root">
-    <div class="page-header nihongami-header shippori">
-      <p class="page-title">NIHONGAMI</p>
-      <p class="page-subtitle">日常の装い</p>
+  <div class="">
+    <Header />
+
+    <div id="page_nihongami" class="page-root">
+      <div class="page-header nihongami-header shippori">
+        <p class="page-title">NIHONGAMI</p>
+        <p class="page-subtitle">日常の装い</p>
+      </div>
+      <Intro1 />
+      <MenuJigami />
     </div>
-    <Intro1 />
-    <MenuJigami />
+    <Footer />
   </div>
 </template>
 

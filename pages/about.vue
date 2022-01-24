@@ -1,6 +1,10 @@
 <template>
-  <div id="page-about" class="">
-    <Seikosan />
+  <div class="">
+    <Header />
+    <div id="page-about" class="">
+      <Seikosan />
+      <Footer />
+    </div>
   </div>
 </template>
 
