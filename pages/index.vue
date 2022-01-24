@@ -1,5 +1,6 @@
 <template>
   <div class="index">
+    <Header />
     <HeroHeader />
     <About />
     <Menu />
