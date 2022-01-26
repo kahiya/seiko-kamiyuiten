@@ -43,11 +43,21 @@ export default {
   font-size: 14px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
-  top: 70px;
+  top: 98px;
   display: flex;
   flex-direction: column;
-
   justify-content: space-around;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .list-item {

@@ -1,7 +1,7 @@
 <template>
   <div class="">
-    <div class="g-nav">
-      <GrobalMenu @close-modal="isMenuVisible = false" v-show="isMenuVisible" />
+    <GrobalMenu @close-modal="isMenuVisible = false" v-show="isMenuVisible" />
+    <div class="g-nav" v-show="!isMenuVisible">
       <a href="/">
         <img src="@/assets/images/logo-kari.svg" class="logo" alt="" />
       </a>
@@ -16,15 +16,26 @@
           <span class="bar_bottom"></span>
         </button>
 
-        <button
-          class="menu"
+        <!-- <button
+          class="menu btn-close"
           @click.prevent="isMenuVisible = false"
           v-show="isMenuVisible"
         >
           <span class="bar_left"></span>
           <span class="bar_right"></span>
-        </button>
+        </button> -->
       </div>
+    </div>
+
+    <div class="g-nav menu-open" v-show="isMenuVisible">
+      <a href="/">
+        <img src="@/assets/images/logo-kari.svg" class="logo" alt="" />
+      </a>
+
+      <button class="menu btn-close" @click.prevent="isMenuVisible = false">
+        <span class="bar_left"></span>
+        <span class="bar_right"></span>
+      </button>
     </div>
   </div>
 </template>
@@ -117,5 +128,29 @@ export default {
   bottom: 30%;
   transform: translate(-50%, -8px) rotate(-45deg);
   transition: transform 0.3s;
+}
+
+.btn-close {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: #000;
+  padding-right: 20px;
+}
+
+.menu-open {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>
