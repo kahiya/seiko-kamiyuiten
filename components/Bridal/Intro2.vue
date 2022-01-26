@@ -74,7 +74,7 @@ export default {};
 
   @include mq-m {
     position: absolute;
-    bottom: 0;
+    bottom: -13vh;
     width: 65vw;
     height: 40vw;
     padding: 6vw;
@@ -88,7 +88,7 @@ export default {};
   margin-bottom: 100px;
 
   @include mq-m {
-    margin-bottom: 15vw;
+    margin-bottom: 23vw;
     width: 100%;
     height: 60vh;
   }

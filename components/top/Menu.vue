@@ -1,6 +1,6 @@
 <template>
   <div id="menu" class="page-root">
-    <section class="page-block shippori">
+    <section class="page-block shippori fuwa" ref="fuwa">
       <img
         src="@/assets/images/toppage-title_menu.svg"
         class="section-title"
@@ -47,7 +47,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      visible: false,
+    };
+  },
+  mounted() {
+    this.observeIntersection("fuwa");
+  },
+  methods: {},
+};
 </script>
 <style scoped lang="scss">
 #menu {

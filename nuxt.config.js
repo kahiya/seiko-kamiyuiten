@@ -40,7 +40,7 @@ export default {
     scss: ["@/assets/scss/vars.scss", "@/assets/scss/mixins.scss"],
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ["~/plugins/IntersectionMixin.js"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [

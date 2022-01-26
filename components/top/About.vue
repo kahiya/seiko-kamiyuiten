@@ -1,6 +1,6 @@
 <template>
   <div id="top_about" class="page-root">
-    <article class="page-block about-article">
+    <article class="page-block about-article fuwa" ref="fuwa">
       <img
         src="@/assets/images/blog_04.jpg"
         class="about-img debug-box"
@@ -28,7 +28,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      visible: false,
+    };
+  },
+  mounted() {
+    this.observeIntersection("fuwa");
+  },
+  methods: {},
+};
 </script>
 <style scoped lang="scss">
 .about-article {

@@ -36,14 +36,14 @@ export default {
 </script>
 <style scoped lang="scss">
 .menu-list {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   width: 100%;
   letter-spacing: 0.1rem;
   font-size: 14px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
-  top: 98px;
+  top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

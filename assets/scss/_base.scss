@@ -162,3 +162,16 @@ html {
     display: block;
   }
 }
+
+// mixin ================================================================
+
+.fuwa {
+  opacity: 0;
+  transform: translateY(50px);
+
+  &.active {
+    opacity: 1;
+    transition: 0.6s;
+    transform: translateX(0);
+  }
+}
