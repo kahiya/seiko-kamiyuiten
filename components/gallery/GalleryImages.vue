@@ -1,13 +1,15 @@
 <template>
   <div class="container page-block">
-    <Tinybox v-model="index" :images="images"></Tinybox>
-    <img
-      v-for="(img, idx) in images"
-      :src="img.thumbnail"
-      :alt="img.alt"
-      class="open-tinybox img-box"
-      @click="index = idx"
-    />
+    <no-ssr>
+      <Tinybox v-model="index" :images="images"></Tinybox>
+      <img
+        v-for="(img, idx) in images"
+        :src="img.thumbnail"
+        :alt="img.alt"
+        class="open-tinybox img-box"
+        @click="index = idx"
+      />
+    </no-ssr>
   </div>
 </template>
 
