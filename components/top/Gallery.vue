@@ -1,6 +1,6 @@
 <template>
   <div class="page-root">
-    <article id="gallery" class="page-block container mt-20">
+    <article id="gallery" class="page-block container fuwa" ref="fuwa">
       <no-ssr>
         <Tinybox v-model="index" :images="images"></Tinybox>
         <img
@@ -28,6 +28,7 @@ export default {
 
   data() {
     return {
+      visible: false,
       images: [
         {
           src: "https://picsum.photos/id/13/600/1000",
@@ -73,11 +74,15 @@ export default {
       index: null,
     };
   },
+  mounted() {
+    this.observeIntersection("fuwa");
+  },
+  methods: {},
 };
 </script>
 <style scoped lang="scss">
 .container {
-  margin: 10vw auto;
+  margin: 10vw auto 5vw;
 
   align-items: left;
   text-align: center;

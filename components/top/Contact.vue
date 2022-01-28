@@ -1,6 +1,6 @@
 <template>
   <div class="page-root">
-    <section id="contact" class="page-block my-20 shippori">
+    <section id="contact" class="page-block my-20 shippori fuwa" ref="fuwa">
       <span class="">
         <img
           src="@/assets/images/toppage-title_contact.svg"
@@ -12,7 +12,7 @@
         <img
           src="@/assets/images/flame-top.svg"
           alt=""
-          class="flame-img my-10"
+          class="flame-img mb-10"
         />
 
         <span class="contact-header">ご予約方法</span>
@@ -48,7 +48,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      visible: false,
+    };
+  },
+  mounted() {
+    this.observeIntersection("fuwa");
+  },
+  methods: {},
+};
 </script>
 <style scoped lang="scss">
 .contact {
