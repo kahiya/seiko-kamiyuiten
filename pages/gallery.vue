@@ -1,7 +1,11 @@
 <template>
   <div class="">
     <Header />
-    <div id="page-gallery" class="">
+    <div id="page-gallery" class="page-root">
+      <div class="page-header gallery-header shippori">
+        <p class="page-title">GALLERY</p>
+        <p class="page-subtitle">おしごと</p>
+      </div>
       <GalleryImages />
       <Footer />
     </div>
@@ -11,4 +15,8 @@
 <script>
 export default {};
 </script>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.gallery-header {
+  background-image: url(@/assets/images/29.jpg);
+}
+</style>

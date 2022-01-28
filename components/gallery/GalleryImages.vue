@@ -5,7 +5,7 @@
       v-for="(img, idx) in images"
       :src="img.thumbnail"
       :alt="img.alt"
-      class="open-tinybox"
+      class="open-tinybox img-box"
       @click="index = idx"
     />
   </div>
@@ -36,6 +36,16 @@ export default {
           alt: "Alt 3",
           thumbnail: "https://picsum.photos/id/256/200",
         },
+        {
+          src: "https://picsum.photos/id/256/1500/600",
+          alt: "Alt 3",
+          thumbnail: "https://picsum.photos/id/256/200",
+        },
+        {
+          src: "https://picsum.photos/id/256/1500/600",
+          alt: "Alt 3",
+          thumbnail: "https://picsum.photos/id/256/200",
+        },
       ],
       index: null,
     };
@@ -45,18 +55,27 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
+  margin: 10vw auto;
+
+  align-items: left;
   text-align: center;
   font-size: 15px;
+  gap: 20px;
+  flex-wrap: wrap;
+  display: grid;
+
   @include mq-d {
-    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
 
   @include mq-m {
-    flex-direction: columnz;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
   }
+}
+
+.container > * {
+  width: 100%;
 }
 </style>
