@@ -1,5 +1,6 @@
 <template>
   <div class="page-inner shippori page-block">
+    <img src="@/assets/images/mizuhiki.svg" class="page-top-icon" alt="" />
     <!-- intro1 ------------------------------------------->
 
     <div id="intro-box1" class="intro-box">
@@ -55,6 +56,10 @@
 export default {};
 </script>
 <style scoped lang="scss">
+.page-top-icon {
+  margin-bottom: 5vw;
+}
+
 %text-box {
   position: absolute;
   z-index: 10;

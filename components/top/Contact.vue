@@ -9,15 +9,16 @@
         />
       </span>
       <div class="contact">
-        <span class="contact-header">ご予約方法</span>
-        <p class="shippori contact-note">
-          下記にEメールもしくはSNSのDMからご連絡ください
-        </p>
         <img
           src="@/assets/images/flame-top.svg"
           alt=""
           class="flame-img my-10"
         />
+
+        <span class="contact-header">ご予約方法</span>
+        <p class="shippori contact-note">
+          下記にEメールもしくはSNSのDMからご連絡ください
+        </p>
         <table class="contact-info">
           <tr>
             <th>Email</th>
