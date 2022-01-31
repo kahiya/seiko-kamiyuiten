@@ -41,7 +41,7 @@ export default {};
 }
 
 #hero-img1 {
-  background-image: url(@/assets/images/01.jpg);
+  background-image: url(@/assets/images/hero-img.jpg);
 }
 
 #hero-img2 {

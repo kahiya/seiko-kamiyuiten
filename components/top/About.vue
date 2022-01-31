@@ -1,5 +1,12 @@
 <template>
   <div id="top_about" class="page-root">
+    <div class="logo-wrap">
+      <img
+        src="@/assets/images/kamiyuiten-logo5.svg"
+        class="center-logo"
+        alt=""
+      />
+    </div>
     <article class="page-block about-article fuwa" ref="fuwa">
       <img
         src="@/assets/images/blog_04.jpg"
@@ -104,5 +111,32 @@ export default {
 .mobile-btn {
   order: 2;
   margin-bottom: 30px;
+}
+
+.logo-wrap {
+  //background-image: url(@/assets/images/bg-img.png);
+  width: 18vw;
+  height: 16vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -70px;
+
+  @include mq-m {
+    width: 55vw;
+    height: 50vw;
+  }
+}
+
+.center-logo {
+  @include mq-d {
+    width: 20vw;
+    height: auto;
+  }
+
+  @include mq-m {
+    width: 45vw;
+  }
 }
 </style>
