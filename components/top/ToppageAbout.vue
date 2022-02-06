@@ -57,6 +57,7 @@ export default {
   @include mq-m {
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
   }
 }
 

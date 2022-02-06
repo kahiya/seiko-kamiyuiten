@@ -62,6 +62,10 @@ export default {
 <style scoped lang="scss">
 #menu {
   margin-top: 100px;
+
+  @include mq-m {
+    margin-top: 20px;
+  }
 }
 
 .menu-link {

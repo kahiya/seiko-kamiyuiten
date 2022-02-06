@@ -23,6 +23,10 @@ export default {};
   height: 680px;
   overflow: hidden;
   //  position: relative;
+
+  @include mq-m {
+    height: 70vh;
+  }
 }
 
 .hero-img {
@@ -30,7 +34,7 @@ export default {};
   //  opacity: 0;
   width: 100%;
   height: 680px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   // position: absolute;
@@ -38,6 +42,11 @@ export default {};
   top: 0;
   // -webkit-animation: anime 18s 0s infinite;
   // animation: anime 18s 0s infinite;
+
+  @include mq-m {
+    height: 70vh;
+    background-position: 25% center;
+  }
 }
 
 #hero-img1 {
