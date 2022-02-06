@@ -1,6 +1,6 @@
 <template>
   <div class="page-root">
-    <section id="contact" class="page-block my-20 shippori fuwa" ref="fuwa">
+    <section id="contact" class="page-block shippori fuwa" ref="fuwa">
       <span class="">
         <img
           src="@/assets/images/toppage-title_contact.svg"

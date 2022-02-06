@@ -1,20 +1,27 @@
 <template>
   <div class="page-root">
-    <article id="gallery" class="page-block container fuwa" ref="fuwa">
-      <no-ssr>
-        <Tinybox v-model="index" :images="images"></Tinybox>
-        <img
-          v-for="(img, idx) in images"
-          :src="img.thumbnail"
-          :alt="img.alt"
-          class="open-tinybox img-box"
-          @click="index = idx"
-        />
-      </no-ssr>
-    </article>
+    <div class="page-block fuwa" ref="fuwa">
+      <img
+        src="@/assets/images/toppage-title_gallery.svg"
+        class="section-title"
+        alt=""
+      />
+      <article id="gallery" class="container">
+        <no-ssr>
+          <Tinybox v-model="index" :images="images"></Tinybox>
+          <img
+            v-for="(img, idx) in images"
+            :src="img.thumbnail"
+            :alt="img.alt"
+            class="open-tinybox img-box"
+            @click="index = idx"
+          />
+        </no-ssr>
+      </article>
 
-    <div class="btn-block">
-      <a href="/gallery" class="nomal-btn shippori">view more</a>
+      <div class="btn-block">
+        <a href="/gallery" class="nomal-btn shippori">view more</a>
+      </div>
     </div>
   </div>
 </template>
@@ -82,7 +89,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .container {
-  margin: 10vw auto 5vw;
+  margin: 5vw auto 5vw;
 
   align-items: left;
   text-align: center;
