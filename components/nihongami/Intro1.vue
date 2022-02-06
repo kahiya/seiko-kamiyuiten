@@ -1,5 +1,5 @@
 <template>
-  <div class="page-inner shippori page-block">
+  <div class="page-inner shippori page-block fuwa" ref="fuwa">
     <!-- intro1 ------------------------------------------->
 
     <div id="intro-box1" class="intro-box">
@@ -54,7 +54,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      visible: false,
+    };
+  },
+  mounted() {
+    this.observeIntersection("fuwa");
+  },
+  methods: {},
+};
 </script>
 <style scoped lang="scss">
 .intro-box {

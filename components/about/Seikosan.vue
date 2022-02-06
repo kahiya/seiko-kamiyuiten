@@ -1,15 +1,12 @@
 <template>
-  <div id="seikosan" class="page-root">
-    <div class="page-header">
-      <img src="@/assets/images/main01.jpg" class="page-header-img" alt="" />
-    </div>
+  <div id="seikosan" class="page-root fuwa" ref="fuwa">
     <div class="page-block shippori">
       <div class="name-block">
         <div class="title">結髪師</div>
         <p class="name">聖子</p>
         <p class="name-en">seiko</p>
       </div>
-      <img src="@/assets/images/main03.jpg" class="plofile-img" alt="" />
+      <img src="@/assets/images/seiko-profile.jpg" class="plofile-img" alt="" />
       <p class="description">
         プロフィール：<br />
         京都祇園町の結髪師へ弟子入り。祇園町、宮川町、先斗町の舞妓さんをかかえる美容室で住み込み生活をしながらおよそ6年技術を磨く。
@@ -22,7 +19,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      visible: false,
+    };
+  },
+  mounted() {
+    this.observeIntersection("fuwa");
+  },
+  methods: {},
+};
 </script>
 <style scoped lang="scss">
 .name-block {

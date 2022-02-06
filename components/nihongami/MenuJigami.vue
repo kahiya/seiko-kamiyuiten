@@ -1,5 +1,5 @@
 <template>
-  <div class="page-block shippori">
+  <div class="page-block shippori fuwa" ref="fuwa">
     <p>Price</p>
 
     <div class="menu-wrap">
@@ -34,7 +34,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      visible: false,
+    };
+  },
+  mounted() {
+    this.observeIntersection("fuwa");
+  },
+  methods: {},
+};
 </script>
 <style scoped lang="scss">
 .menu-wrap {

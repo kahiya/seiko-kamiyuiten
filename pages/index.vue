@@ -2,7 +2,7 @@
   <div class="index">
     <Header />
     <HeroHeader />
-    <About />
+    <ToppageAbout />
     <Menu />
     <Gallery />
     <Contact />

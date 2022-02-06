@@ -9,7 +9,7 @@
     </div>
     <article class="page-block about-article fuwa" ref="fuwa">
       <img
-        src="@/assets/images/blog_04.jpg"
+        src="@/assets/images/toppage-about.jpg"
         class="about-img debug-box"
         alt=""
       />
@@ -61,12 +61,10 @@ export default {
 }
 
 .about-img {
-  width: 45%;
-  height: 400px;
+  width: 50%;
+  height: auto;
 
-  img {
-    object-fit: cover;
-  }
+  object-fit: cover;
 
   @include mq-m {
     width: 90%;
