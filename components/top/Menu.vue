@@ -7,7 +7,7 @@
         alt=""
       />
 
-      <a href="/public/menu1.html" class="menu-link right">
+      <a href="/nihongami" class="menu-link right">
         <div class="menu-right">
           <p class="menu-header">Menu</p>
           <p class="menu-title">普段の装い</p>
@@ -24,7 +24,7 @@
           alt=""
         />
       </a>
-      <a href="/public/menu2.html" class="menu-link left">
+      <a href="/bridal" class="menu-link left">
         <div class="menu-left">
           <p class="menu-header">Menu</p>
           <p class="menu-title">御婚礼の装い</p>
@@ -77,6 +77,8 @@ export default {
   width: 100%;
   height: 600px;
   display: block;
+  background-position: center;
+  background-size: cover;
 
   @include mq-m {
     height: 60vh;

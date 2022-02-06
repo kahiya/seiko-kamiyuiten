@@ -58,6 +58,7 @@ export default {};
 <style scoped lang="scss">
 .page-top-icon {
   margin-bottom: 5vw;
+  width: 100%;
 }
 
 %text-box {

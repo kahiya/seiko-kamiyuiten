@@ -1,7 +1,5 @@
 <template>
   <div class="page-block shippori fuwa" ref="fuwa">
-    <p>Price</p>
-
     <div class="menu-wrap">
       <div id="jigeyui" class="menu-description">
         <p class="menu-header">plan</p>

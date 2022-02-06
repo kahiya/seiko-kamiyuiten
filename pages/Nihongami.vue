@@ -8,6 +8,8 @@
         <p class="page-subtitle">日常の装い</p>
       </div>
       <Intro1 />
+      <img class="section-title" src="@/assets/images/title-price.svg" alt="" />
+
       <MenuJigami />
     </div>
     <Footer />
@@ -19,8 +21,7 @@ export default {};
 </script>
 <style scoped lang="scss">
 .nihongami-header {
-  background-image: url(@/assets/images/main02.jpg);
+  background-image: url(@/assets/images/pageheader-nihongami.jpg);
   width: 100%;
-  object-fit: cover;
 }
 </style>
