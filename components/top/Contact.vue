@@ -1,6 +1,6 @@
 <template>
   <div class="page-root">
-    <section id="contact" class="page-block shippori fuwa" ref="fuwa">
+    <section id="contact" class="page-block my-20 shippori fuwa" ref="fuwa">
       <span class="">
         <img
           src="@/assets/images/toppage-title_contact.svg"
@@ -27,13 +27,15 @@
           <tr>
             <th class="instagram info-header">instagram</th>
             <td>
-              <a href="https://www.instagram.com/kamiyuiumeko/"> : @shoryu</a>
+              <a href="https://www.instagram.com/kamiyuiumeko/">
+                : @kamiyuiumeko</a
+              >
             </td>
           </tr>
           <tr>
             <th class="twitter info-header">twitter</th>
             <td>
-              <a href="https://twitter.com/kamiyuiumeko"> : @kamiyuimeko </a>
+              <a href="https://twitter.com/kamiyuiumeko"> : @kamiyuiumeko </a>
             </td>
           </tr>
         </table>

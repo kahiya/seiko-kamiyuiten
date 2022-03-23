@@ -13,12 +13,27 @@
           高島田はかつて上流武家の女性が正式な儀式の場で結い上げる髪型でした。
           髷の根を高くし、優雅で上品に仕上げる髪型は、現在「文金高島田」として花嫁の髪型として定着しています
         </p>
-        <div class="option">
-          <p class="menu-option-title">新日本髪</p>
-          <p class="menu-option-price">２８，０００円〜</p>
-        </div>
       </div>
       <img class="menu-img" src="@/assets/images/torayome-8410.jpg" alt="" />
+    </div>
+    <!-- プラン新日本髪 ---------------------------------->
+    <div class="menu-wrap">
+      <div id="takashimada" class="menu-description">
+        <p class="menu-header">plan</p>
+        <p class="menu-title">新日本髪</p>
+        <p class="menu-price">２８，０００円[税込]</p>
+        <p class="menu-time">髪結所要時間:40分</p>
+        <p class="menu-note">
+          高島田はかつて上流武家の女性が正式な儀式の場で結い上げる髪型でした。
+          髷の根を高くし、優雅で上品に仕上げる髪型は、現在「文金高島田」として花嫁の髪型として定着しています
+        </p>
+      </div>
+      <img
+        id="shin-nihongami"
+        class="menu-img"
+        src="@/assets/images/shin-nihongami.png"
+        alt=""
+      />
     </div>
     <!-- プラン花嫁用かんざし一式(角隠し/綿帽子) ---------------------------------->
     <div class="menu-wrap-sm">
@@ -224,5 +239,9 @@ export default {};
 
 .menu-option-price {
   font-size: clamp(16px, 3vw, 18px);
+}
+
+#shin-nihongami {
+  background-position: center 70%;
 }
 </style>

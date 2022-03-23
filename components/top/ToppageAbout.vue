@@ -114,13 +114,14 @@ export default {
 
 .logo-wrap {
   //background-image: url(@/assets/images/bg-img.png);
-  width: 18vw;
+  width: 22vw;
   height: 16vw;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: -70px;
+  position: relative;
 
   @include mq-m {
     width: 55vw;
@@ -130,7 +131,7 @@ export default {
 
 .center-logo {
   @include mq-d {
-    width: 20vw;
+    width: 25vw;
     height: auto;
   }
 

@@ -19,7 +19,7 @@
       <div id="hankatsura" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">半かつら</p>
-        <p class="menu-price">１5，０００[税込]〜</p>
+        <p class="menu-price">１８，０００[税込]〜</p>
         <p class="menu-time">髪結所要時間:20分</p>
         <p class="menu-note">
           生え際の髪の毛のみを生かして 結い上げます。

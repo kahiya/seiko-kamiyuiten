@@ -226,7 +226,7 @@
                         alt=""
                       />
                       <span> instagram : </span>
-                      <span>@shoryu</span>
+                      <span>@kamiyuimeko</span>
                     </p>
                     <p class="contact-sns">
                       <img
