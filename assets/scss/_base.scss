@@ -52,7 +52,7 @@ body {
 
   @include mq-d {
     max-width: 1000px + (16px * 2);
-    padding: 50px 16px;
+    padding: 100px 16px 150px;
   }
 
   @include mq-m {

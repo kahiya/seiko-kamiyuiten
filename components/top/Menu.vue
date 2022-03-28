@@ -1,6 +1,6 @@
 <template>
   <div id="menu" class="page-root">
-    <section class="page-block shippori fuwa" ref="fuwa">
+    <section class="menu-sec shippori fuwa" ref="fuwa">
       <img
         src="@/assets/images/toppage-title_menu.svg"
         class="section-title"
@@ -62,10 +62,15 @@ export default {
 <style scoped lang="scss">
 #menu {
   margin-top: 100px;
+  width: 100%;
 
   @include mq-m {
     margin-top: 20px;
   }
+}
+
+.menu-sec {
+  width: 100%;
 }
 
 .menu-link {
@@ -93,6 +98,7 @@ export default {
   @extend %menu-img;
 
   background-image: url(@/assets/images/top_menu_1.jpg);
+  background-attachment: fixed;
 }
 
 .menu-link.left {
