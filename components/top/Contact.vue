@@ -24,7 +24,7 @@
           method="POST"
           name="contact"
           class="form-contact"
-          netlifyd
+          netlify
         >
           <input type="hidden" name="form-name" :value="contact" />
 
