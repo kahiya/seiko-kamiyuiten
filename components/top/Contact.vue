@@ -17,13 +17,10 @@
 
         <span class="contact-header">ご予約方法</span>
         <p class="shippori contact-note">
-          下記にEメールもしくはSNSのDMからご連絡ください
+          下記にフォームもしくはSNSのDMからご連絡ください
         </p>
+
         <table class="contact-info">
-          <tr>
-            <th>Email</th>
-            <td>: kamiyui13seiko@gmail.com</td>
-          </tr>
           <tr>
             <th class="instagram info-header">instagram</th>
             <td>
@@ -82,12 +79,16 @@ export default {
 }
 
 .contact-note {
+  margin-bottom: 30px;
+
   @include mq-m {
     font-size: clamp(13px, 3vw, 14px);
   }
 }
 
 .contact-info {
+  margin-top: 30px;
+
   @include mq-d {
     font-size: 16px;
     padding: 50px;
