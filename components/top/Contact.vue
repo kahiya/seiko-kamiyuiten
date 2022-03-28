@@ -219,4 +219,57 @@ $icon-width: 16px;
     width: 80vw;
   }
 }
+
+.form-contact {
+  @include mq-d {
+    min-width: 500px;
+  }
+
+  @include mq-m {
+    width: 80vw;
+  }
+}
+
+.form-contact > * + * {
+  margin-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-row {
+  color: $btn-brown;
+}
+
+.form-input,
+.form-textarea {
+  border: 1px solid $btn-brown;
+  padding: 10px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.form-input {
+  height: 3ch;
+}
+
+.btn-row {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: $btn-brown;
+  color: #fff;
+  padding: 10px 30px;
+  height: 3ch;
+  display: inline;
+  border-radius: 3px;
+}
+
+.hidden {
+  overflow: hidden;
+}
 </style>
