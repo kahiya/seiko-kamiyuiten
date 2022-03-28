@@ -24,8 +24,12 @@
           method="POST"
           name="contact"
           class="form-contact"
-          data-netlify="true"
+          netlifyd
         >
+          <input type="hidden" name="form-name" :value="contact" />
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>
+          </p>
           <div class="form-row">
             <label for="" class="form-label">お名前</label>
             <input type="text" class="form-input" />
