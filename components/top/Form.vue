@@ -35,7 +35,13 @@ export default {};
 </script>
 <style scoped lang="scss">
 .form-contact {
-  min-width: 500px;
+  @include mq-d {
+    min-width: 500px;
+  }
+
+  @include mq-m {
+    width: 80vw;
+  }
 }
 
 .form-contact > * + * {
