@@ -5,7 +5,7 @@
     <ToppageAbout />
     <Menu />
     <Gallery />
-    <Form/ >
+
     <Contact />
 
     <Footer />
