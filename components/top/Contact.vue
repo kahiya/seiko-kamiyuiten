@@ -19,7 +19,13 @@
         <p class="shippori contact-note">
           下記にEメールもしくはSNSのDMからご連絡ください
         </p>
-        <form action="" method="POST" class="form-contact" data-netlify="true">
+        <form
+          action=""
+          method="POST"
+          name="contact"
+          class="form-contact"
+          data-netlify="true"
+        >
           <div class="form-row">
             <label for="" class="form-label">お名前</label>
             <input type="text" class="form-input" />
