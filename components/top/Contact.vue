@@ -19,6 +19,33 @@
         <p class="shippori contact-note">
           下記にEメールもしくはSNSのDMからご連絡ください
         </p>
+        <form action="" method="post" class="form-contact">
+          <div class="form-row">
+            <label for="" class="form-label">お名前</label>
+            <input type="text" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label for="" class="form-label">メールアドレス</label>
+            <input type="email" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label for="" class="form-label">件名</label>
+            <input type="text" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label for="" class="form-label">本文</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="20"
+              class="form-textarea"
+            ></textarea>
+          </div>
+          <div class="btn-row">
+            <input type="submit" class="submit-btn" value="送信" />
+          </div>
+        </form>
         <table class="contact-info">
           <tr>
             <th>Email</th>
