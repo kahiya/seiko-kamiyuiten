@@ -5,7 +5,9 @@
     <ToppageAbout />
     <Menu />
     <Gallery />
+    <Form/ >
     <Contact />
+
     <Footer />
   </div>
 </template>
