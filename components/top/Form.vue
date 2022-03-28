@@ -1,6 +1,8 @@
 <template>
   <div class="">
     <form action="" method="post" class="form-contact" data-netlify="true">
+      <input type="hidden" name="form-name" class="hedden" :value="contact" />
+
       <div class="form-row">
         <label for="" class="form-label">お名前</label>
         <input type="text" class="form-input" />
@@ -81,5 +83,9 @@ export default {};
   height: 3ch;
   display: inline;
   border-radius: 3px;
+}
+
+.hidden {
+  overflow: hidden;
 }
 </style>
