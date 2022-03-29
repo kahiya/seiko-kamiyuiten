@@ -1,19 +1,24 @@
 <template>
   <div class="">
-    <form action="" method="post" class="form-contact" data-netlify="true">
-      <input type="hidden" name="form-name" class="hedden" :value="contact" />
-
+    <form
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdajRuhVw2YpmTLGx1yL6lpRtH5T5G1wxn10HNP8TjrlvH-uQ/formResponse"
+      method="POST"
+      name="contact"
+      class="form-contact"
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
+    >
       <div class="form-row">
-        <label for="" class="form-label">name</label>
-        <input type="text" class="form-input" />
+        <label for="" class="form-label">お名前</label>
+        <input type="text" class="form-input" name="entry.1756106708" />
       </div>
       <div class="form-row">
         <label for="" class="form-label">メールアドレス</label>
-        <input type="email" class="form-input" />
+        <input type="email" class="form-input" name="entry.1884551195" />
       </div>
       <div class="form-row">
         <label for="" class="form-label">件名</label>
-        <input type="text" class="form-input" />
+        <input type="text" class="form-input" name="entry.273031128" />
       </div>
       <div class="form-row">
         <label for="" class="form-label">本文</label>
@@ -23,12 +28,25 @@
           cols="30"
           rows="20"
           class="form-textarea"
+          name="entry.130272431"
         ></textarea>
       </div>
       <div class="btn-row">
-        <input type="submit" class="submit-btn" value="送信" />
+        <button
+          type="submit"
+          class="submit-btn"
+          value="送信"
+          @click="isSubmitted = true"
+        >
+          送信
+        </button>
       </div>
     </form>
+    <iframe
+      @load="submittedHandler"
+      name="hidden_iframe"
+      style="display: none"
+    ></iframe>
   </div>
 </template>
 
