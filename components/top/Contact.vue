@@ -24,6 +24,8 @@
           method="POST"
           name="contact"
           class="form-contact"
+          target="hidden_iframe"
+          onsubmit="submitted=true;"
         >
           <div class="form-row">
             <label for="" class="form-label">お名前</label>
@@ -49,9 +51,21 @@
             ></textarea>
           </div>
           <div class="btn-row">
-            <input type="submit" class="submit-btn" value="送信" />
+            <button
+              type="submit"
+              class="submit-btn"
+              value="送信"
+              @click="isSubmitted = true"
+            >
+              送信
+            </button>
           </div>
         </form>
+        <iframe
+          @load="submittedHandler"
+          name="hidden_iframe"
+          style="display: none"
+        ></iframe>
         <table class="contact-info">
           <tr>
             <th>Email</th>
@@ -87,12 +101,29 @@ export default {
   data() {
     return {
       visible: false,
+      isSubmitted: false,
     };
   },
   mounted() {
     this.observeIntersection('fuwa');
   },
-  methods: {},
+  methods: {
+    submitHandler(e) {
+      /*
+      // mobile chrome でconfirmは動作しない
+      if (confirm('この内容で送信してよろしいですか？')) {
+        return true;
+      }
+      return e.preventDefault();
+      */
+    },
+
+    submittedHandler(e) {
+      if (this.isSubmitted) {
+        this.$router.push('/thanks');
+      }
+    },
+  },
 };
 </script>
 <style scoped lang="scss">
