@@ -1,6 +1,6 @@
 <template>
   <div class="page-root">
-    <section id="contact" class="page-block my-20 shippori fuwa" ref="fuwa">
+    <section id="contact" class="page-block shippori fuwa" ref="fuwa">
       <span class="">
         <img
           src="@/assets/images/toppage-title_contact.svg"
@@ -15,7 +15,7 @@
           class="flame-img mb-10"
         />
 
-        <span class="contact-header">ご予約方法</span>
+        <span class="contact-header">お問い合わせ</span>
         <p class="shippori contact-note">
           下記にEメールもしくはSNSのDMからご連絡ください
         </p>
@@ -77,6 +77,15 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+#contact {
+  // margin-top: 100px;
+  width: 100%;
+
+  @include mq-m {
+    margin-top: 20px;
+  }
+}
+
 .contact {
   display: flex;
   flex-direction: column;

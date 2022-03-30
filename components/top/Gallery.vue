@@ -1,5 +1,5 @@
 <template>
-  <div class="page-root">
+  <div class="page-root" id="gallery">
     <div class="page-block fuwa" ref="fuwa">
       <img
         src="@/assets/images/toppage-title_gallery.svg"
@@ -88,6 +88,15 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+#gallery {
+  margin-top: 100px;
+  width: 100%;
+
+  @include mq-m {
+    margin-top: 20px;
+  }
+}
+
 .container {
   margin: 5vw auto 5vw;
 

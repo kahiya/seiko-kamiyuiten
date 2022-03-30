@@ -52,14 +52,14 @@ body {
 
   @include mq-d {
     max-width: 1000px + (16px * 2);
-    padding: 100px 16px 150px;
+    padding: 50px 16px 50px;
   }
 
   @include mq-m {
     padding-left: size-m(8);
     padding-right: size-m(8);
-    padding-top: size-m(15);
-    padding-bottom: size-m(15);
+    padding-top: size-m(50);
+    padding-bottom: size-m(30);
   }
 }
 
@@ -120,7 +120,7 @@ body {
   }
 
   @include mq-m {
-    width: 50vw;
+    width: 60vw;
     margin-bottom: 10vw;
   }
 }

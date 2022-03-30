@@ -179,7 +179,13 @@ export default {
 }
 
 .menu-title {
-  font-size: var(--4xl);
+  @include mq-d {
+    font-size: 36px;
+  }
+
+  @include mq-m {
+    font-size: 6vw;
+  }
 }
 
 .menu-sub {

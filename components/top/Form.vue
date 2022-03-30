@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" id="contact-form">
     <form
       action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdajRuhVw2YpmTLGx1yL6lpRtH5T5G1wxn10HNP8TjrlvH-uQ/formResponse"
       method="POST"
@@ -54,6 +54,10 @@
 export default {};
 </script>
 <style scoped lang="scss">
+#contact-form {
+  padding: 50px 0;
+}
+
 .form-contact {
   @include mq-d {
     min-width: 500px;
