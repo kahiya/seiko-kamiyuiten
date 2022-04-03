@@ -31,7 +31,7 @@
       <img
         id="shin-nihongami"
         class="menu-img"
-        src="@/assets/images/shin-nihongami.png"
+        src="@/assets/images/shin-nihongami.jpg"
         alt=""
       />
     </div>
@@ -65,7 +65,7 @@
     <!-- プラン白無垢 ---------------------------------->
 
     <div class="menu-wrap">
-      <img class="menu-img" src="@/assets/images/main_sp02.jpg" alt="" />
+      <img class="menu-img" src="@/assets/images/shiromuku.jpg" alt="" />
       <div id="hankatsura" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">白無垢</p>
@@ -79,7 +79,7 @@
       </div>
     </div>
     <div class="menu-wrap">
-      <img class="menu-img" src="@/assets/images/main_sp02.jpg" alt="" />
+      <img class="menu-img" src="@/assets/images/uchikake.jpg" alt="" />
       <div id="hankatsura" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">色打掛</p>

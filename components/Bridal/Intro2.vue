@@ -44,7 +44,7 @@
       </div>
       <img
         id="intro-img4"
-        src="@/assets/images/02.jpg"
+        src="@/assets/images/bridal-img4.jpg"
         class="section-img"
         alt=""
       />

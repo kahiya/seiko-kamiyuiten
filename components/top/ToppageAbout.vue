@@ -9,7 +9,7 @@
     </div>
     <article class="page-block about-article fuwa" ref="fuwa">
       <img
-        src="@/assets/images/toppage-about.jpg"
+        src="@/assets/images/top-about.jpg"
         class="about-img debug-box"
         alt=""
       />

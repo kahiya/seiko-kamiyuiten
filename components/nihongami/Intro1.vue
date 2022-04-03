@@ -8,7 +8,7 @@
       </div>
       <img
         id="intro-img1"
-        src="@/assets/images/02.jpg"
+        src="@/assets/images/nihongami-intro1.jpg"
         class="section-img"
         alt=""
       />
@@ -20,7 +20,7 @@
       </div>
       <img
         id="intro-img2"
-        src="@/assets/images/02.jpg"
+        src="@/assets/images/nihongami_1.jpg"
         class="section-img"
         alt=""
       />
@@ -33,7 +33,7 @@
       </div>
       <img
         id="intro-img3"
-        src="@/assets/images/02.jpg"
+        src="@/assets/images/nihongami-intro3.jpg"
         class="section-img"
         alt=""
       />

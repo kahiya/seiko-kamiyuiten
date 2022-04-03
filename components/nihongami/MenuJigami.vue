@@ -12,7 +12,7 @@
           可能かが左右されますのでご依頼の際に お尋ねください。
         </p>
       </div>
-      <img class="menu-img" src="@/assets/images/main_sp02.jpg" alt="" />
+      <img class="menu-img" src="@/assets/images/10.jpg" alt="" />
     </div>
     <div class="menu-wrap">
       <img class="menu-img" src="@/assets/images/main_sp02.jpg" alt="" />
