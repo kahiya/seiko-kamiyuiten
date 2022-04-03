@@ -9,7 +9,7 @@
       onsubmit="submitted=true;"
     >
       <div class="form-row">
-        <label for="" class="form-label">お名前</label>
+        <label for="" class="form-label">名前</label>
         <input type="text" class="form-input" name="entry.1756106708" />
       </div>
       <div class="form-row">
