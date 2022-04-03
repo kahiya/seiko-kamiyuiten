@@ -45,7 +45,7 @@ body {
   flex-wrap: nowrap;
 
   @include mq-d {
-    padding: 0 0 200px;
+    padding: 0 0;
   }
 
   @include mq-m {
