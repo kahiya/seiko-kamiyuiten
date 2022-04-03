@@ -131,6 +131,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.tinybox {
+  height: 100vh;
+}
+
 .container {
   margin: 10vw auto;
 
@@ -152,7 +156,7 @@ export default {
   }
 }
 
-.container > * {
+.img-box {
   width: 100%;
   height: 100%;
   object-fit: cover;

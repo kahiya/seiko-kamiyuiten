@@ -97,6 +97,10 @@ export default {
   }
 }
 
+.tinybox {
+  height: 100vh;
+}
+
 .container {
   margin: 5vw auto 5vw;
 
@@ -118,7 +122,7 @@ export default {
   }
 }
 
-.container > * {
+.img-box {
   width: 100%;
   height: 200px;
   object-fit: cover;
