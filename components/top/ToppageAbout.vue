@@ -136,7 +136,7 @@ export default {
   }
 
   @include mq-m {
-    width: 45vw;
+    width: 70vw;
   }
 }
 </style>

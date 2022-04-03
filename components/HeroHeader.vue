@@ -20,7 +20,7 @@ export default {};
   position: relative;
 
   @include mq-m {
-    height: 90vh;
+    height: 80vh;
   }
 }
 
@@ -38,7 +38,7 @@ export default {};
   background-attachment: fixed;
 
   @include mq-m {
-    height: 90vh;
+    height: 80vh;
     background-position: center;
   }
 }
