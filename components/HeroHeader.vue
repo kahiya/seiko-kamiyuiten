@@ -20,7 +20,7 @@ export default {};
   position: relative;
 
   @include mq-m {
-    height: 70vh;
+    height: 90vh;
   }
 }
 
@@ -38,33 +38,61 @@ export default {};
   background-attachment: fixed;
 
   @include mq-m {
-    height: 70vh;
-    background-position: 25% center;
+    height: 90vh;
+    background-position: center;
   }
 }
 
 #hero-img1 {
-  background-image: url(@/assets/images/hero-img.jpg);
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+
+  @include mq-d {
+    background-image: url(@/assets/images/hero-img1.jpg);
+  }
+
+  @include mq-m {
+    background-image: url(@/assets/images/hero-img1-mb.jpg);
+  }
 }
 
 #hero-img2 {
-  background-image: url(@/assets/images/02.jpg);
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
+
+  @include mq-d {
+    background-image: url(@/assets/images/hero-img2.jpg);
+  }
+
+  @include mq-m {
+    background-image: url(@/assets/images/hero-img2-mb.jpg);
+  }
 }
 
 #hero-img3 {
-  background-image: url(@/assets/images/03.jpg);
   -webkit-animation-delay: 10s;
   animation-delay: 10s;
+
+  @include mq-d {
+    background-image: url(@/assets/images/hero-img3.jpg);
+  }
+
+  @include mq-m {
+    background-image: url(@/assets/images/hero-img3-mb.jpg);
+  }
 }
 
 #hero-img4 {
-  background-image: url(@/assets/images/04.jpg);
   -webkit-animation-delay: 15s;
   animation-delay: 15s;
+
+  @include mq-d {
+    background-image: url(@/assets/images/hero-img4.jpg);
+  }
+
+  @include mq-m {
+    background-image: url(@/assets/images/hero-img4-mb.jpg);
+  }
 }
 
 @keyframes bgAnime {

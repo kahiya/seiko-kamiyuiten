@@ -81,10 +81,6 @@ export default {
 #contact {
   // margin-top: 100px;
   width: 100%;
-
-  @include mq-m {
-    margin-top: 20px;
-  }
 }
 
 .contact {

@@ -20,6 +20,6 @@ export default {};
 </script>
 <style scoped lang="scss">
 .gallery-header {
-  background-image: url(@/assets/images/29.jpg);
+  background-image: url(@/assets/images/gallery-header.jpg);
 }
 </style>

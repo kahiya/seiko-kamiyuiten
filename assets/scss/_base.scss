@@ -43,7 +43,14 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 0 0 200px;
+
+  @include mq-d {
+    padding: 0 0 200px;
+  }
+
+  @include mq-m {
+    padding: 0 0 50px;
+  }
 }
 
 .page-block {
