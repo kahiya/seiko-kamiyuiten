@@ -14,7 +14,7 @@
       </div>
       <div class="form-row">
         <label for="" class="form-label">メールアドレス</label>
-        <input type="email" class="form-input" name="entry.1884551195" />
+        <input type="email" class="form-input" name="entry.1785850431" />
       </div>
       <div class="form-row">
         <label for="" class="form-label">件名</label>
@@ -34,7 +34,7 @@
       <div class="btn-row">
         <button
           type="submit"
-          class="submit-btn"
+          class="nomal-btn"
           value="送信"
           @click="isSubmitted = true"
         >
@@ -96,15 +96,6 @@ export default {};
 
 .btn-row {
   text-align: center;
-}
-
-.submit-btn {
-  background-color: $btn-brown;
-  color: #fff;
-  padding: 10px 30px;
-  height: 3ch;
-  display: inline;
-  border-radius: 3px;
 }
 
 .hidden {

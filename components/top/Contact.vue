@@ -17,9 +17,10 @@
 
         <span class="contact-header">お問い合わせ</span>
         <p class="shippori contact-note">
-          下記にEメールもしくはSNSのDMからご連絡ください
+          下記フォームに入力後、送信ボタンを押してください。
         </p>
         <Form />
+        <p class="shippori contact-note">◆SNSのDMからも受け付けております◆</p>
         <table class="contact-info">
           <tr>
             <th class="instagram info-header">instagram</th>
@@ -114,6 +115,7 @@ export default {
   @include mq-d {
     font-size: 16px;
     padding: 50px;
+    margin-top: 30px;
 
     tr > th,
     tr > td {
