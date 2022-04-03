@@ -8,6 +8,7 @@
       </div>
       <Intro2 />
       <MenuTakashimada />
+      <FooterBtn />
     </div>
     <Footer />
   </div>

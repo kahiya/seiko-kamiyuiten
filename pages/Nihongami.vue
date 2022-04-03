@@ -11,6 +11,7 @@
       <img class="section-title" src="@/assets/images/title-price.svg" alt="" />
 
       <MenuJigami />
+      <FooterBtn />
     </div>
     <Footer />
   </div>

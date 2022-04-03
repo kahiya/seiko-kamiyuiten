@@ -7,6 +7,7 @@
         <p class="page-subtitle">結髪師について</p>
       </div>
       <Seikosan />
+      <FooterBtn />
       <Footer />
     </div>
   </div>

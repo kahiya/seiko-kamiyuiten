@@ -43,7 +43,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 0;
+  padding: 0 0 200px;
 }
 
 .page-block {
@@ -131,13 +131,14 @@ body {
   justify-content: center;
 }
 
-%btn {
+%btn-white {
   color: $btn-brown;
   border: 1px solid $btn-brown;
   padding: 18px 36px;
   transition: 0.3s;
   display: inline-block;
   font-size: 18px;
+  font-family: "Shippori Mincho B1", serif;
 
   &:hover {
     color: $bg-color;
@@ -145,14 +146,34 @@ body {
   }
 }
 
+%btn-brown {
+  color: $bg-color;
+  background-color: $btn-brown;
+  border: 1px solid $btn-brown;
+  padding: 18px 36px;
+  transition: 0.3s;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Shippori Mincho B1", serif;
+
+  &:hover {
+    background-color: darken($btn-brown, 20%);
+  }
+}
 .nomal-btn {
-  @extend %btn;
+  @extend %btn-white;
+
+  padding: 18px 36px;
+}
+
+.brown-btn {
+  @extend %btn-brown;
 
   padding: 18px 36px;
 }
 
 .nomal-btn-vr {
-  @extend %btn;
+  @extend %btn-white;
 
   padding: 36px 18px;
 }

@@ -7,8 +7,11 @@
         <p class="page-subtitle">おしごと</p>
       </div>
       <GalleryImages />
-      <Footer />
+      <Nuxt-link to="/" class="nomal-btn"
+        ><span>トップページに戻る</span></Nuxt-link
+      >
     </div>
+    <Footer />
   </div>
 </template>
 
