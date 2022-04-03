@@ -32,14 +32,12 @@
         ></textarea>
       </div>
       <div class="btn-row">
-        <button
+        <input
           type="submit"
           class="nomal-btn"
           value="送信"
           @click="isSubmitted = true"
-        >
-          送信
-        </button>
+        />
       </div>
     </form>
     <iframe
@@ -51,7 +49,30 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      isSubmitted: false,
+    };
+  },
+  methods: {
+    submitHandler(e) {
+      /*
+      // mobile chrome でconfirmは動作しない
+      if (confirm('この内容で送信してよろしいですか？')) {
+        return true;
+      }
+      return e.preventDefault();
+      */
+    },
+
+    submittedHandler(e) {
+      if (this.isSubmitted) {
+        this.$router.push("/thanks");
+      }
+    },
+  },
+};
 </script>
 <style scoped lang="scss">
 #contact-form {
