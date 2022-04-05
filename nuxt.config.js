@@ -51,6 +51,7 @@ export default {
         name: "twitter:card",
         content: "summary_large_image",
       },
+      { name: "twitter:site", content: "@kamiyuiumeko" },
     ],
 
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
