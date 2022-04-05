@@ -4,15 +4,53 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "seiko-kamiyuiten",
+    title: "セイコ髪結店",
     htmlAttrs: {
       lang: "ja",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "日本古来の文化「日本髪」の技術と素晴らしさ、そして想いをつなげる結髪師菱田聖子のホームページ。地髪結い、婚礼、作品撮りなどご依頼承ります。",
+      },
       { name: "format-detection", content: "telephone=no" },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "セイコ髪結店",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "日本古来の文化「日本髪」の技術と素晴らしさ、そして想いをつなげる結髪師菱田聖子のホームページ。地髪結い、婚礼、作品撮りなどご依頼承ります。",
+      },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://seiko-kamiyuiten.com/",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://seiko-kamiyuiten.com/images/ogp-img.png",
+      },
+      { hid: "og:locale", property: "og:locale", content: "ja_JP" },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "セイコ髪結店",
+      },
+      {
+        hid: "twitter:card",
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
     ],
 
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
