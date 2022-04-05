@@ -97,12 +97,18 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["nuxt-webfontloader"],
+  modules: [["@nuxtjs/sitemap"], ["nuxt-webfontloader"]],
 
   webfontloader: {
     google: {
       families: ["Hina+Mincho:400", "Shippori+Mincho+B1:400"],
     },
+  },
+
+  sitemap: {
+    hostname: "https://seiko-kamiyuiten.com/",
+    gzip: true,
+    exclude: [],
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
