@@ -97,7 +97,17 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [["@nuxtjs/sitemap"], ["nuxt-webfontloader"]],
+  modules: [
+    ["@nuxtjs/sitemap"],
+    ["nuxt-webfontloader"],
+    [
+      "@nuxtjs/google-gtag",
+      {
+        id: "G-YFV11S17N4",
+        debug: true,
+      },
+    ],
+  ],
 
   webfontloader: {
     google: {
