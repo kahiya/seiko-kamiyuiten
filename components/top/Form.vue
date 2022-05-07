@@ -31,6 +31,21 @@
           name="entry.130272431"
         ></textarea>
       </div>
+      <div class="">
+        <img src="@/assets/images/recaptcha.jpg" class="recaptcha-img" alt="" />
+      </div>
+      <div class="form-row">
+        <label for="" class="form-label"
+          >上に表示されている数字とアルファベットを入力してください
+          <span class="needed">※必須</span>
+        </label>
+        <input
+          type="text"
+          class="form-input"
+          name="entry.1797246440"
+          required
+        />
+      </div>
       <div class="btn-row">
         <input
           type="submit"
@@ -121,5 +136,13 @@ export default {
 
 .hidden {
   overflow: hidden;
+}
+
+.recaptcha-img {
+  margin: auto;
+}
+
+.needed {
+  color: red;
 }
 </style>
