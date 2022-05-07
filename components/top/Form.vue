@@ -46,6 +46,12 @@
           required
         />
       </div>
+      <p class="caution">
+        3番目の文字は逆さまにして読んでください。<br />
+        大文字と小文字を区別してください。<br />
+        間違うとフォームの回答が送信されません
+      </p>
+
       <div class="btn-row">
         <input
           type="submit"
@@ -144,5 +150,21 @@ export default {
 
 .needed {
   color: red;
+  font-weight: bold;
+}
+
+.caution {
+  color: red;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
+
+  @include mq-d {
+    font-size: 16px;
+  }
+
+  @include mq-m {
+    font-size: 14px;
+  }
 }
 </style>
