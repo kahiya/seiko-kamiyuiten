@@ -4,7 +4,7 @@
       <div id="jigeyui" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">地毛結い</p>
-        <p class="menu-price">１８，０００[税込]〜</p>
+        <p class="menu-price">１８，０００[税別]〜</p>
         <p class="menu-time">髪結所要時間:1時間</p>
         <p class="menu-note">
           お客様ご自身のお髪を使って 結い上げる日本古来の手法です。
@@ -19,7 +19,7 @@
       <div id="hankatsura" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">半かつら</p>
-        <p class="menu-price">１８，０００[税込]〜</p>
+        <p class="menu-price">１８，０００[税別]〜</p>
         <p class="menu-time">髪結所要時間:20分</p>
         <p class="menu-note">
           生え際の髪の毛のみを生かして 結い上げます。

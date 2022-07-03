@@ -7,7 +7,7 @@
       <div id="takashimada" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">文金高島田</p>
-        <p class="menu-price">４８，０００円[税込]</p>
+        <p class="menu-price">４８，０００円[税別]</p>
         <p class="menu-time">髪結所要時間:1.5時間</p>
         <p class="menu-note">
           高島田はかつて上流武家の女性が正式な儀式の場で結い上げる髪型でした。
@@ -21,7 +21,7 @@
       <div id="takashimada" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">新日本髪</p>
-        <p class="menu-price">２８，０００円[税込]</p>
+        <p class="menu-price">２８，０００円[税別]</p>
         <p class="menu-time">髪結所要時間:40分</p>
         <p class="menu-note">
           高島田はかつて上流武家の女性が正式な儀式の場で結い上げる髪型でした。
@@ -41,19 +41,20 @@
       <div class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">花嫁用かんざし一式</p>
-        <p class="menu-price">１４，５００[税込]</p>
+        <p class="menu-price">１４，８００[税別]</p>
         <p class="menu-note">(角隠し/綿帽子)レンタル</p>
       </div>
     </div>
 
     <!-- プラン黒引き振袖 ---------------------------------->
+    I
 
     <div class="menu-wrap">
       <img class="menu-img" src="@/assets/images/torayome-8252.jpg" alt="" />
       <div id="kitsuke" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">黒引き振袖</p>
-        <p class="menu-price">４８，０００[税込]〜</p>
+        <p class="menu-price">４８，０００[税別]〜</p>
         <p class="menu-time">着付け所用時間:約30分</p>
         <p class="menu-note">
           昭和初期までは民間の結婚式で一般的だった黒引き振袖。
@@ -69,7 +70,7 @@
       <div id="hankatsura" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">白無垢</p>
-        <p class="menu-price">４８，０００[税込]〜</p>
+        <p class="menu-price">４８，０００[税別]〜</p>
         <p class="menu-time">着付け所用時間:約30分</p>
         <p class="menu-note">
           白無垢の白い色は神聖な太陽の光に例えられ、室町の時代から婚礼の衣装として使われるようになりました。
@@ -83,7 +84,7 @@
       <div id="hankatsura" class="menu-description">
         <p class="menu-header">plan</p>
         <p class="menu-title">色打掛</p>
-        <p class="menu-price">４８，０００[税込]〜</p>
+        <p class="menu-price">４８，０００[税別]〜</p>
         <p class="menu-time">着付け所用時間:約30分</p>
 
         <p class="menu-note">
